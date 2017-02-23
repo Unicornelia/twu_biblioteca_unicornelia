@@ -4,6 +4,10 @@ public class BibliotecaApp {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello visitor, the Biblioteca is open!");
+        Biblioteca first = new Biblioteca();
+
+        System.out.println(first.printWelcome());
+
     }
 }
+
