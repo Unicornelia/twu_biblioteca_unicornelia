@@ -6,4 +6,9 @@ public class Biblioteca {
         String welcome = "Hello visitor, the Biblioteca is open!";
         return welcome;
     }
+
+    public String[] listBooks() {
+        String[] bookList = {"One", "Two", "Three"};
+        return bookList;
+    }
 }

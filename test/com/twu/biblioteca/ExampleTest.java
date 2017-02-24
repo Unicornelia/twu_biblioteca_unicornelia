@@ -2,6 +2,8 @@ package com.twu.biblioteca;
 
 
 import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class ExampleTest {
@@ -12,8 +14,15 @@ public class ExampleTest {
     }
 
     @Test
-    public void expectWelcomeString() {
-        Biblioteca firstMessage = new Biblioteca();
-        assertEquals("Hello visitor, the Biblioteca is open!", firstMessage.printWelcome());
+    public void testWelcomeString() {
+        Biblioteca firstTask = new Biblioteca();
+        assertEquals("Hello visitor, the Biblioteca is open!", firstTask.printWelcome());
+    }
+
+    @Test
+    public void testListOfBooks() {
+        Biblioteca secondTask = new Biblioteca();
+        String[] expectedBookList = {"One", "Two", "Three"};
+        assertArrayEquals(expectedBookList, secondTask.listBooks());
     }
 }
