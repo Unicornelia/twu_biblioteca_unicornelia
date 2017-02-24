@@ -8,7 +8,7 @@ public class Biblioteca {
     }
 
     public String[] listBooks() {
-        String[] bookList = {"One", "Two", "Three"};
+        String[] bookList = {"In Search of Lost Time", "Don Quixote", "Ulysses", "War and Peace", "The Odyssey", "The Divine Comedy"};
         return bookList;
     }
 }
