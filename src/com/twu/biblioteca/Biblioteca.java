@@ -7,8 +7,10 @@ public class Biblioteca {
         return welcome;
     }
 
-    public String[] listBooks() {
+    public String listBooks() {
         String[] bookList = {"In Search of Lost Time", "Don Quixote", "Ulysses", "War and Peace", "The Odyssey", "The Divine Comedy"};
-        return bookList;
+        for (int i = 0; i < bookList.length; i++) {
+            return bookList[i];
+        }
     }
 }
