@@ -4,12 +4,12 @@ public class BibliotecaApp {
 
     public static void main(String[] args) {
 
-        Biblioteca first = new Biblioteca();
-        Biblioteca second = new Biblioteca();
+        Biblioteca biblioteca = new Biblioteca();
+        System.out.println(biblioteca.printWelcome());
+        System.out.println("");
 
-        System.out.println(first.printWelcome());
-        System.out.println(second.listBooks());
-
+        biblioteca.listBooks();
+        biblioteca.listBooksFormatted();
     }
 }
 
