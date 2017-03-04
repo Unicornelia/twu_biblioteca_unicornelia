@@ -23,4 +23,9 @@ public class Librarian {
 
         return book.isAvailable;
     }
+
+    public boolean checkoutBook(Book book) {
+        book.isAvailable = false;
+        return book.isAvailable;
+    }
 }
