@@ -15,17 +15,16 @@ public class BibliotecaTest {
     }
 
     @Test
-    public void testListOfBooks() {
+    public void testTitleOfBooksInList() {
         Biblioteca biblioteca = new Biblioteca();
-        String[] expectedBookList = {"In Search of Lost Time", "Don Quixote", "Ulysses", "War and Peace", "The Odyssey", "The Divine Comedy"};
-        assertArrayEquals(expectedBookList, biblioteca.listBooks());
+        assertEquals("In Search of Lost Time", biblioteca.listBooks().get(0).getName());
+        assertEquals("Don Quixote", biblioteca.listBooks().get(1).getName());
     }
 
-//    @Test
-//    public void printMenu() {
-//        Menu menu = new Menu();
-//        Biblioteca biblioteca = new Biblioteca();
-//        void answer = menu.menuOptions(2);
-//        assertEquals("Option 2", answer);
-//    }
+    @Test
+    public void testPublishDateOfBooksInList() {
+        Biblioteca biblioteca = new Biblioteca();
+        assertEquals(1913, biblioteca.listBooks().get(0).getBookPublishDate());
+        assertEquals(1612, biblioteca.listBooks().get(1).getBookPublishDate());
+    }
 }
