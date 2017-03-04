@@ -7,7 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 public class BibliotecaTest {
 
-
     @Test
     public void testWelcomeString() {
         Biblioteca biblioteca = new Biblioteca();
