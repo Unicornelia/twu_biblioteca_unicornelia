@@ -19,6 +19,6 @@ public class Book {
     public int getBookPublishDate() {return this.bookPublishDate;}
 
     @Override
-    public String toString() {return "| " + name + " | " + author + " | " + bookPublishDate + " |";}
+    public String toString() {return "| Title: " + name + " | Author: " + author + " | Published: " + bookPublishDate + " |";}
 
 }
