@@ -3,23 +3,28 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public int intro() {
-        System.out.println("Enter option from menu: ");
-        System.out.println(" ");
-        System.out.println("Option 1: List Books");
-        System.out.println("Option 2: Checkout Book");
-        System.out.println("Option 3: Return Book");
-        System.out.println("Option 4: Quit");
+public int intro() {
+    System.out.println("Enter option from menu: ");
+    System.out.println(" ");
+    System.out.println("Option 1: List Books");
+    System.out.println("Option 2: Checkout Book");
+    System.out.println("Option 3: Return Book");
+    System.out.println("Option 4: Quit");
 
-        Scanner n = new Scanner(System.in);
-        int answer = n.nextInt();
-        return answer;
-    }
+    Scanner n = new Scanner(System.in);
+    int answer = n.nextInt();
+    return answer;
 
-    public void menuOptions(int answer, Biblioteca biblioteca) {
+}
 
+public void menuOptions(int answer, Biblioteca biblioteca) {
 
-        switch(answer) {
+//    while (answer != 1 && answer != 2 && answer != 3 && answer != 4) {
+//        System.out.println("Please enter: 1, 2, 3 or 4.");
+//        break;
+//    }
+
+    switch (answer) {
             case 1:
                 System.out.println("Available books in the library:");
                 System.out.println(" ");
@@ -28,13 +33,16 @@ public class Menu {
             case 2:
                 System.out.println("Option 2");
                 break;
-            case 3: System.out.println("Option 3");
+            case 3:
+                System.out.println("Option 3");
                 break;
-            case 4: System.out.println("GoodBye!");
+            case 4:
+                System.out.println("GoodBye!");
                 break;
             default:
-                System.out.println("Select a valid option!");
+                System.out.println("Invalid option!");
                 break;
         }
     }
 }
+
