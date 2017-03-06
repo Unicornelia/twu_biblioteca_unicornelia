@@ -9,10 +9,11 @@ public class Librarian {
 
     private List<Book> bookList = new ArrayList<Book>();
 
-    public List<Book> getListOfBooksFromRegister() {
-        for (Book book: bookRegister.keySet()) {
-            bookList.add(book);
-        }
+    public List<Book> listOfBooks() {
+        bookList.add(new Book("In Search of Lost Time", "Marcel Proust", 1913));
+        bookList.add(new Book("Don Quixote", "Miguel de Cervantes", 1612));
+        bookList.add(new Book("Ulysses", "James Joyce", 1922));
+        bookList.add(new Book("War and Peace", "Leo Tolstoy", 1869));
         return bookList;
     }
 
@@ -34,8 +35,9 @@ public class Librarian {
 //    public boolean isBookAvailable(Book book) {
 //        return true;
 //    }
-//
-//    public void checkoutBook(Book book) {
-//        System.out.println("Book has been checked out");
-//    }
+
+    public void checkoutBook(Book book) {
+        System.out.println("Book has been checked out");
+        bookRegister.put(book, false);
+    }
 }

@@ -19,19 +19,14 @@ public int intro() {
 
 public void menuOptions(int answer, Biblioteca biblioteca) {
 
-//    while (answer != 1 && answer != 2 && answer != 3 && answer != 4) {
-//        System.out.println("Please enter: 1, 2, 3 or 4.");
-//        break;
-//    }
-
     switch (answer) {
             case 1:
                 System.out.println("Available books in the library:");
                 System.out.println(" ");
-                biblioteca.getBookList();
+                biblioteca.listBooksFormatted();
                 break;
             case 2:
-                System.out.println("Option 2");
+                System.out.println("You are about to Checkout a Book");
                 break;
             case 3:
                 System.out.println("Option 3");

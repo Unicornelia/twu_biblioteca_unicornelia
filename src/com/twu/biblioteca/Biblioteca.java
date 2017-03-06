@@ -1,7 +1,5 @@
 package com.twu.biblioteca;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Biblioteca {
@@ -13,7 +11,6 @@ public class Biblioteca {
         librarian = new Librarian();
     }
 
-
     public void printWelcome() {
         System.out.println(welcome);
         System.out.println("");
@@ -21,14 +18,14 @@ public class Biblioteca {
 
     public String getWelcome() {return welcome;}
 
-    public List<Book> getBookList() {
-        return librarian.getListOfBooksFromRegister();
-    }
+    public List<Book> getBookList() { return librarian.listOfBooks(); }
+
+
 
     public void listBooksFormatted() {
-        for (int i = 0; i < getBookList().size(); i++) {
-            System.out.println(getBookList().get(i));
+        List<Book> alternativeList = getBookList();
+        for (int i = 0; i < alternativeList.size(); i++) {
+            System.out.println(alternativeList.get(i));
         }
     }
-
 }
