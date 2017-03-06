@@ -14,8 +14,6 @@ public class Book {
 
     public String getName() {return this.name;}
 
-//    public String getAuthor() {return this.author;}
-
     public int getBookPublishDate() {return this.bookPublishDate;}
 
     @Override

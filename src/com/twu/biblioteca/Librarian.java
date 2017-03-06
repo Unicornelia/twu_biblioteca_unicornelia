@@ -40,4 +40,9 @@ public class Librarian {
         System.out.println("Book has been checked out");
         bookRegister.put(book, false);
     }
+
+    public void returnBook(Book book) {
+        System.out.println("Book has been returned");
+        bookRegister.put(book, true);
+    }
 }
