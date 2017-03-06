@@ -12,4 +12,3 @@ public class BibliotecaApp {
         menu.menuOptions(option, biblioteca);
     }
 }
-
