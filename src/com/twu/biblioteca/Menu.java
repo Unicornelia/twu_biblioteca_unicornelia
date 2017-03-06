@@ -18,6 +18,21 @@ public int intro() {
 
 }
 
+public int bookChoice() {
+    System.out.println("Which book do you choose? (enter a number)");
+    Scanner n = new Scanner(System.in);
+    int bookChosen = n.nextInt();
+    return bookChosen;
+}
+
+public int bookReturn() {
+    System.out.println("Which book are you returning? (enter a number)");
+    Scanner n = new Scanner(System.in);
+    int bookReturn = n.nextInt();
+    return bookReturn;
+}
+
+
 public void menuOptions(int answer, Biblioteca biblioteca) {
 
     switch (answer) {
@@ -28,13 +43,13 @@ public void menuOptions(int answer, Biblioteca biblioteca) {
                 break;
             case 2:
                 System.out.println("You are about to Checkout a Book");
-                System.out.println("Which book do you choose? (enter a number)");
-
+                biblioteca.listBooksFormatted();
+                System.out.println(bookChoice());
                 break;
             case 3:
                 System.out.println("You are about to Return a Book");
-                System.out.println("Which book are you returning? (enter a number)");
-
+                biblioteca.listBooksFormatted();
+                System.out.println(bookReturn());
                 break;
             case 4:
                 System.out.println("GoodBye!");

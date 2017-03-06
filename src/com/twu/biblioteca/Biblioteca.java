@@ -23,9 +23,9 @@ public class Biblioteca {
 
 
     public void listBooksFormatted() {
-        List<Book> alternativeList = getBookList();
-        for (int i = 0; i < alternativeList.size(); i++) {
-            System.out.println(alternativeList.get(i));
+        List<Book> alternativeBookList = getBookList();
+        for (int i = 0; i < alternativeBookList.size(); i++) {
+            System.out.println(" " + (i + 1) + alternativeBookList.get(i));
         }
     }
 }
