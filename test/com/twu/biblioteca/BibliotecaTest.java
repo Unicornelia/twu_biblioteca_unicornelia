@@ -16,14 +16,14 @@ public class BibliotecaTest {
     @Test
     public void testTitleOfBooksInList() {
         Biblioteca biblioteca = new Biblioteca();
-        assertEquals("In Search of Lost Time", biblioteca.listBooks().get(0).getName());
-        assertEquals("Don Quixote", biblioteca.listBooks().get(1).getName());
+        assertEquals("In Search of Lost Time", biblioteca.getBookList().get(2).getName());
+        assertEquals("Don Quixote", biblioteca.getBookList().get(1).getName());
     }
 
     @Test
     public void testPublishDateOfBooksInList() {
         Biblioteca biblioteca = new Biblioteca();
-        assertEquals(1913, biblioteca.listBooks().get(0).getBookPublishDate());
-        assertEquals(1612, biblioteca.listBooks().get(1).getBookPublishDate());
+        assertEquals(1913, biblioteca.getBookList().get(0).getBookPublishDate());
+        assertEquals(1612, biblioteca.getBookList().get(2).getBookPublishDate());
     }
 }

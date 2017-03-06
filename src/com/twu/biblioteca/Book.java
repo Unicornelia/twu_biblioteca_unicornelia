@@ -2,21 +2,17 @@ package com.twu.biblioteca;
 
 public class Book {
 
-    public boolean isAvailable;
     private String name;
     private String author;
     private int bookPublishDate;
 
-    public Book(String name, String author, int bookPublishDate, boolean isAvailable) {
+    public Book(String name, String author, int bookPublishDate) {
         this.name = name;
         this.author = author;
         this.bookPublishDate = bookPublishDate;
-        this.isAvailable = isAvailable;
     }
 
     public String getName() {return this.name;}
-
-    public boolean getAvailability() {return this.isAvailable;}
 
 //    public String getAuthor() {return this.author;}
 
