@@ -16,10 +16,6 @@ public class Librarian {
         return bookList;
     }
 
-    public List<Book> bookList() {
-        return bookList;
-    }
-
 
     public HashMap<Book, Boolean> bookRegister = new HashMap<Book, Boolean>();
     

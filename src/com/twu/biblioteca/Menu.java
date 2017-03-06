@@ -28,7 +28,7 @@ public void menuOptions(int answer, Biblioteca biblioteca) {
             case 1:
                 System.out.println("Available books in the library:");
                 System.out.println(" ");
-                biblioteca.listBooksFormatted();
+                biblioteca.getBookList();
                 break;
             case 2:
                 System.out.println("Option 2");

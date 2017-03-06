@@ -10,7 +10,7 @@ public class BibliotecaTest {
     @Test
     public void testWelcomeString() {
         Biblioteca biblioteca = new Biblioteca();
-        assertEquals("Hello visitor, the Biblioteca is open!", biblioteca.printWelcome());
+        assertEquals("Hello visitor, the Biblioteca is open!", biblioteca.getWelcome());
     }
 
     @Test

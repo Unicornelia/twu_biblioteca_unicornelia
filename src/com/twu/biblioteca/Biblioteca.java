@@ -14,11 +14,12 @@ public class Biblioteca {
     }
 
 
-    public String getWelcomeMessage() {return welcome;}
-
-    public String printWelcome() {
-        return welcome;
+    public void printWelcome() {
+        System.out.println(welcome);
+        System.out.println("");
     }
+
+    public String getWelcome() {return welcome;}
 
     public List<Book> getBookList() {
         return librarian.getListOfBooksFromRegister();
@@ -29,4 +30,5 @@ public class Biblioteca {
             System.out.println(getBookList().get(i));
         }
     }
+
 }
