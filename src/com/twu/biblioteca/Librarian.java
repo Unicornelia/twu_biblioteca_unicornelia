@@ -31,18 +31,14 @@ public class Librarian {
     public HashMap<Book, Boolean> getBookRegister() {
         return bookRegister;
     }
-//
-//    public boolean isBookAvailable(Book book) {
-//        return true;
-//    }
 
     public void checkoutBook(Book book) {
-        System.out.println("Book has been checked out");
+        System.out.println(book.getName() + " has been checked out");
         bookRegister.put(book, false);
     }
 
     public void returnBook(Book book) {
-        System.out.println("Book has been returned");
+        System.out.println(book.getName() + " has been returned");
         bookRegister.put(book, true);
     }
 }

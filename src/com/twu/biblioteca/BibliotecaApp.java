@@ -7,8 +7,8 @@ public class BibliotecaApp {
         Biblioteca biblioteca = new Biblioteca();
         Menu menu = new Menu();
 
-        biblioteca.printWelcome();
         int option = menu.intro();
         menu.menuOptions(option, biblioteca);
     }
 }
+

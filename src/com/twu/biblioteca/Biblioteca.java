@@ -16,10 +16,11 @@ public class Biblioteca {
         System.out.println("");
     }
 
+    public Librarian getLibrarian() {return librarian;}
+
     public String getWelcome() {return welcome;}
 
     public List<Book> getBookList() { return librarian.listOfBooks(); }
-
 
 
     public void listBooksFormatted() {
